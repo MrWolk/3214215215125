@@ -1,0 +1,19 @@
+plugins { id 'java' }
+group = 'ru.allin'
+version = '1.1.0'
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://jitpack.io' }
+    maven { url = 'https://repo.papermc.io/repository/maven-public/' }
+}
+dependencies {
+    compileOnly 'io.papermc.paper:paper-api:26.2.build.121-stable'
+    compileOnly('com.github.MilkBowl:VaultAPI:1.7') { transitive = false }
+}
+java { toolchain { languageVersion = JavaLanguageVersion.of(25) } }
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+jar {
+    archiveBaseName = 'ALLINMenu'
+    archiveVersion = '1.1.0'
+}

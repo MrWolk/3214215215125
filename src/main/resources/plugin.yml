@@ -1,0 +1,19 @@
+name: ALLINMenu
+version: 1.1.0
+main: ru.allin.menu.ALLINMenu
+api-version: '1.21'
+author: ALLINONLINE
+softdepend: [Vault, ALLINFactions, ALLINMiner, ALLINProcessor, ALLINFermer, ALLINFishing, ALLINLumberjack, ALLINAlchemist, ALLINHunter]
+commands:
+  menu:
+    description: Открыть игровое меню ALLINONLINE
+    usage: /menu
+  allinmenu:
+    description: Администрирование игрового меню
+    usage: /allinmenu
+    aliases: [amenu]
+permissions:
+  allinmenu.use:
+    default: true
+  allinmenu.admin:
+    default: op

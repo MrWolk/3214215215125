@@ -1,0 +1,16 @@
+teleport:
+  seconds: 30
+  cancel-on-damage: false
+messages:
+  prefix: '&8[&cALLIN&8] '
+  teleport-start: '&eТелепортация к мастеру &6{name}&e через &c{seconds} сек.&e Не
+    двигайтесь!'
+  teleport-progress: '&eТелепортация: &c{seconds} сек.'
+  teleport-done: '&aВы телепортированы к мастеру &6{name}&a.'
+  teleport-cancel-move: '&cТелепортация отменена: вы попытались двигаться.'
+  teleport-cancel-damage: '&cТелепортация отменена из-за полученного урона.'
+  no-masters: '&cМастера обмена пока не настроены.'
+  master-not-found: '&cТакой мастер не найден.'
+  no-permission: '&cНедостаточно прав.'
+tops:
+  weekly-reward: 5000.0
